@@ -1,0 +1,15 @@
+spring:
+  datasource:
+    url: jdbc:tc:postgresql:14-alpine:///customerdb?TC_INITSCRIPT=file:src/main/resources/schema.sql
+    driver-class-name: org.testcontainers.jdbc.ContainerDatabaseDriver
+    username: nobody
+    password: nobody
+#  test:
+  #  database:
+ #     replace: none
+
+logging:
+  level:
+    root: INFO
+    org: INFO
+    com.github: INFO
